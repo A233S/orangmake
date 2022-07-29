@@ -14,6 +14,7 @@ git commit -m "add file"
 #git push --set-upstream orangmake master
 while :
 do
+  echo "a233sp"
   sleep 61
   git push --set-upstream orangmake master
   if [ $? == 0 ]
