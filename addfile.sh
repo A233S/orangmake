@@ -22,18 +22,23 @@ git add .gitattributes
 #git config --global http.postBuffer 524288000
 #git config http.postBuffer 524288000
 #git config --global http.version HTTP/1.1
-git add .
+git add Android.bp Makefile README.md addfile.sh art bionic bootable bootstrap.bash build dalvik external frameworks hardware libcore libnativehelper prebuilts run.sh sdk system
+
 git commit -m "add file"
+git push orangmake master
+git add toolchain tools vendor
+git commit -m "add file"
+git push orangmake master
 #orangmake为仓库名,master为你需要的分支
 #git push --set-upstream orangmake master
-while :
-do
-  echo "a233sp"
-  sleep 61
-  echo "start"
-  git push orangmake master
-  if [ $? == 0 ]
-  then
-  exit 0
-  fi
-done
+#while :
+#do
+#  echo "a233sp"
+#  sleep 61
+#  echo "start"
+#  git push orangmake master
+#  if [ $? == 0 ]
+#  then
+#  exit 0
+#  fi
+#done
