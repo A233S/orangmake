@@ -1,0 +1,26 @@
+name: makeorang
+
+on:
+  workflow_dispatch:
+      # release:
+      #   types: [published]
+
+jobs:
+
+      build:
+
+        runs-on: ubuntu-latest
+
+        steps:
+
+          - name: Make
+            env:
+              DEBIAN_FRONTEND: noninteractive
+            run: |
+              bash run.sh
+          # 因为我需要得到编译后的ipk插件，所以我选择将完整的/bin/上传
+          - name: Upload artifact
+            uses: actions/upload-artifact@master
+            with:
+              name: End Boot img
+              path: ./out/target/product/
