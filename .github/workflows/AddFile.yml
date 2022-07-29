@@ -31,4 +31,10 @@ jobs:
               #自定义命令
               bash addfile.sh
               #自定义命令结束
+              
+          - name: Collect Test Coverage File
+            uses: actions/upload-artifact@v1.0.0
+            with:
+              name: log-output
+              path: ./log.txt
 
