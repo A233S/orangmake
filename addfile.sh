@@ -8,3 +8,7 @@ git config http.version HTTP/1.1
 git config --global http.postBuffer 524288000
 git config http.postBuffer 524288000
 git config --global http.version HTTP/1.1
+              git add .
+              git commit -m "add file"
+         #orangmake为仓库名,master为你需要的分支
+              git push --set-upstream orangmake master
