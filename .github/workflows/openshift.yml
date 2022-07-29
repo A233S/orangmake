@@ -12,6 +12,11 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
+          - name: Checkout
+            uses: actions/checkout@master
+            # with中的master为你需要编译的当前固件的分支
+            with:
+              ref: master
 
           - name: Make
             env:
