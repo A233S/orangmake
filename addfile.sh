@@ -9,10 +9,13 @@ rm -rf /home/runner/work/orangmake/orangmake//.repo
 echo "###ls"
 ls -a
 echo "###ls"
-git config http.version HTTP/1.1
-git config --global http.postBuffer 524288000
-git config http.postBuffer 524288000
-git config --global http.version HTTP/1.1
+echo "###df"
+df -h
+echo "###df"
+#git config http.version HTTP/1.1
+#git config --global http.postBuffer 524288000
+#git config http.postBuffer 524288000
+#git config --global http.version HTTP/1.1
 git add .
 git commit -m "add file"
 #orangmake为仓库名,master为你需要的分支
