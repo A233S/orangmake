@@ -21,6 +21,7 @@ jobs:
           - name: Make
             env:
               DEBIAN_FRONTEND: noninteractive
+              password: ${{secrets.password}}
             run: |
               bash run.sh
           # 因为我需要得到编译后的ipk插件，所以我选择将完整的/bin/上传
