@@ -14,6 +14,10 @@ df -h
 echo "###df"
 git config http.postBuffer 524288000
 git config --global http.version HTTP/1.1
+git lfs install
+git lfs track "*.psd"
+git add .gitattributes
+
 #git config http.version HTTP/1.1
 #git config --global http.postBuffer 524288000
 #git config http.postBuffer 524288000
@@ -27,7 +31,7 @@ do
   echo "a233sp"
   sleep 61
   echo "start"
-  git push --set-upstream orangmake master
+  git push orangmake master
   if [ $? == 0 ]
   then
   exit 0
