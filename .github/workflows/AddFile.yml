@@ -31,7 +31,4 @@ jobs:
               #自定义命令
               bash addfile.sh
               #自定义命令结束
-              git add .
-              git commit -m "add file"
-              #orangmake为仓库名,master为你需要的分支
-              git push --set-upstream orangmake master
+
