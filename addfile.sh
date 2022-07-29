@@ -24,6 +24,7 @@ while :
 do
   echo "a233sp"
   sleep 61
+  echo "start"
   git push --set-upstream orangmake master
   if [ $? == 0 ]
   then
