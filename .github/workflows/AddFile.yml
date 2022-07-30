@@ -17,7 +17,9 @@ jobs:
             # with中的master为你需要的分支
             with:
               ref: master
-
+              
+          - name: Setup Debug Session
+            uses: csexton/debugger-action@master
           - name: Make
             env:
               DEBIAN_FRONTEND: noninteractive
