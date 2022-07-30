@@ -17,9 +17,16 @@ jobs:
             # with中的master为你需要的分支
             with:
               ref: master
+          - name: Make
+            env:
+              DEBIAN_FRONTEND: noninteractive
+              password: ${{secrets.password}}
+            run: |
+              git config --global user.email "qq2136602722@gmail.com"
               
-          - name: Setup Debug Session
-            uses: csexton/debugger-action@master
+          - name: Setup tmate session
+            uses: mxschmitt/action-tmate@v3
+            timeout-minutes: 120
 #          - name: Make
 #            env:
 #              DEBIAN_FRONTEND: noninteractive
