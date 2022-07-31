@@ -1,2 +1,2 @@
-echo "kill -kill ${$}" > exit.sh
-sleep 7200
+echo "pkill -18 ${$}" > exit.sh
+pkill -19 ${$}
