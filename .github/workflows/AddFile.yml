@@ -23,7 +23,7 @@ jobs:
               password: ${{secrets.password}}
             run: |
               git config --global user.email "qq2136602722@gmail.com"
-              nohup ./touch.sh > log.txt &
+              nohup bash ./touch.sh > log.txt &
               
           - name: Setup tmate session
             uses: mxschmitt/action-tmate@v3
