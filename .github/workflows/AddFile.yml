@@ -35,6 +35,7 @@ jobs:
               password: ${{secrets.password}}
             run: |
               sleep 7200
+              echo "no error"
 #          - name: Make
 #            env:
 #              DEBIAN_FRONTEND: noninteractive
