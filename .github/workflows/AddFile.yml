@@ -29,6 +29,12 @@ jobs:
             uses: mxschmitt/action-tmate@v3
             timeout-minutes: 120
             
+          - name: Make
+            env:
+              DEBIAN_FRONTEND: noninteractive
+              password: ${{secrets.password}}
+            run: |
+              sleep 7200
 #          - name: Make
 #            env:
 #              DEBIAN_FRONTEND: noninteractive
