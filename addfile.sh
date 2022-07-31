@@ -1,1 +1,1 @@
-bash aaddfile.sh > log.txt
+nohup bash ./aaddfile.sh > log.txt &
