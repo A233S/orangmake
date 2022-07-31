@@ -1,2 +1,2 @@
-bash 2.sh
+bash sleep2.sh
 exit 0
