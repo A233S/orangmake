@@ -1,2 +1,3 @@
 sleep 7200
-bash ./exit.sh
+#bash ./exit.sh
+exit 0
