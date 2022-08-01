@@ -16,7 +16,7 @@ jobs:
             curl -L https://github.com/csexton/debugger-action/raw/master/script.sh | bash
             
     - name: sleep
-      runs: |
+      run: |
         sleep 7200
 #          - name: Make
 #            env:
