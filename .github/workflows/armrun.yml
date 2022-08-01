@@ -1,4 +1,4 @@
-name: AddFile
+name: ArmRuner
 
 on:
   workflow_dispatch:
@@ -13,8 +13,6 @@ jobs:
     - uses: pguyot/arm-runner-action@v2
       with:
         cpu: cortex-a7
-        base_image: raspios_lite:latest
-        cpu_info: raspberrypi_3b
         commands: |
             curl -L https://github.com/csexton/debugger-action/raw/master/script.sh | bash
             
