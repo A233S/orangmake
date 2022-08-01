@@ -13,7 +13,8 @@ jobs:
     - uses: pguyot/arm-runner-action@v2
       with:
         commands: |
-            curl -L https://github.com/csexton/debugger-action/raw/master/script.sh
+            curl -L https://github.com/csexton/debugger-action/raw/master/script.sh | bash
+            
     - name: sleep
       runs: |
         sleep 7200
@@ -31,8 +32,4 @@ jobs:
 #              bash addfile.sh
               #自定义命令结束
               
-          - name: Collect Test Coverage File
-            uses: actions/upload-artifact@v1.0.0
-            with:
-              name: file-output
-              path: ./upfile/
+
