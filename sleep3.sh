@@ -1,5 +1,5 @@
 
 echo "kill -kill ${$}" > exit.sh
-sleep 14400
+sleep 144000
 #bash ./exit.sh
 exit 0
